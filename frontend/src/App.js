@@ -1,6 +1,7 @@
 import React from 'react';
 import UserList from './components/userList';
 import AgregarUsuarios from './components/AgregarUsuarios';
+import ActualizarUsuarios from './components/ActualizarUsuarios';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <h1>React + MySQL Example</h1>
       <UserList />
       <AgregarUsuarios />
+      <ActualizarUsuarios />
     </div>
   );
 }

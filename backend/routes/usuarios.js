@@ -37,4 +37,20 @@ router.post('/', (req, res) => {
         res.status(201).json(newUser);
     });
 });
+
+// Actualizar Usuarios
+router.put('/', (req, res) => {
+    const query = 'UPDATE usuarios SET nombre = ?, email= ?, telefono = ? WHERE id = ?';
+    db.query(query, [nombre, email, telefono], (err, results) => {
+        if (err) {
+            console.error('Error al actualizar usuarios: ', err);
+            return res.status(500).json({
+                error: 'Error al actualizar usuario',
+                details: err.message
+            });
+        }
+        res.json(results)
+    });
+});
+
 module.exports = router;
