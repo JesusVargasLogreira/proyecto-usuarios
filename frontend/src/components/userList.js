@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+
 function UserList() {
     const [users, setUsers] = useState([]);
     useEffect(() => {
@@ -13,7 +14,7 @@ function UserList() {
             <table border="1" cellPadding="10">
                 <thead>
                     <tr>
-                        <th>ID</th><th>Name</th><th>Email</th>
+                        <th>ID</th><th>Name</th><th>Email</th><th>Telefono</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -22,6 +23,7 @@ function UserList() {
                             <td>{u.id}</td>
                             <td>{u.nombre}</td>
                             <td>{u.email}</td>
+                            <td>{u.telefono}</td>
                         </tr>
                     ))}
                 </tbody>
