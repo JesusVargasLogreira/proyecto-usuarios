@@ -2,6 +2,7 @@ import React from 'react';
 import UserList from './components/userList';
 import AgregarUsuarios from './components/AgregarUsuarios';
 import ActualizarUsuarios from './components/ActualizarUsuarios';
+import EliminarUsuarios from './components/EliminarUsuarios';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <UserList />
       <AgregarUsuarios />
       <ActualizarUsuarios />
+      <EliminarUsuarios />
     </div>
   );
 }

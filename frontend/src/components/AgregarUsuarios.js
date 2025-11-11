@@ -9,6 +9,7 @@ function AgregarUsuarios() {
         setNewUser({ ...newUser, [e.target.name]: e.target.value });
     };
 
+    // Agregar Usuario
     const addUser = (e) => {
         e.preventDefault();
         axios.post('http://localhost:5001/api/usuarios', newUser)
