@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import AgregarUsuarios from './AgregarUsuarios';
+import ActualizarUsuarios from './ActualizarUsuarios';
+import EliminarUsuarios from './EliminarUsuarios';
 
 function UserList() {
     const [users, setUsers] = useState([]);
@@ -28,6 +31,9 @@ function UserList() {
                     ))}
                 </tbody>
             </table>
+            <AgregarUsuarios />
+            <ActualizarUsuarios />
+            <EliminarUsuarios />
         </div>
     );
 }
