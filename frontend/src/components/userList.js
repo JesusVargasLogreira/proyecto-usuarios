@@ -11,7 +11,7 @@ function UserList() {
     return (
         <div style={{ padding: "20px" }}>
             <h2>User List</h2>
-            <table border="1" cellPadding="10">
+            <table border="2" cellPadding="10">
                 <thead>
                     <tr>
                         <th>ID</th><th>Name</th><th>Email</th><th>Telefono</th>

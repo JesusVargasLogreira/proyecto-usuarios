@@ -1,39 +1,72 @@
-/* .App {
+body {
   text-align: center;
+  background: #566177;
+  color: rgb(222, 228, 228);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login input {
+  background-color: rgb(218, 205, 205);
+  display: block;
+  margin: 5px auto;
+  padding: 10px;
+  border: 2px solid #1c77da;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login input:focus {
+  border-color: #e4391b;
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.login button {
+  padding: 10px 20px;
+  background-color: #1c77da;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.login button:hover {
+  background-color: #047cfc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.login button:active {
+  background-color: #1c5592;
+}
+
+
+table {
+  color: black;
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: #94afe6;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  * {
+    position: relative;
   }
 
-  to {
-    transform: rotate(360deg);
+  td,
+  th {
+    padding-left: 8px;
   }
-} */
+
+  thead tr {
+    height: 60px;
+    background: #2a6ae9;
+    font-size: 16px;
+  }
+
+  tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #566177;
+  }
+}
