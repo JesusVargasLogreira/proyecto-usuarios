@@ -23,7 +23,7 @@ function Login({ onLoginSuccess }) {
             <header>
                 <h1>Login</h1>
             </header>
-            <div>
+            <div className="login">
                 <input
                     type='text'
                     placeholder='Usuario'

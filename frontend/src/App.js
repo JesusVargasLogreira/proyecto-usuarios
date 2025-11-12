@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 import UserList from './components/userList';
 import AgregarUsuarios from './components/AgregarUsuarios';
 import ActualizarUsuarios from './components/ActualizarUsuarios';
@@ -9,7 +10,7 @@ function App() {
   const [user, setUser] = useState(null);
 
   return (
-    <div>
+    <div className="App">
       {user ? (
         <UserList />
       ) : (
